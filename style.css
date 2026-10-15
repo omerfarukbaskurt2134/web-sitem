@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #26352d;
+}
+
+/* Üst menü */
+.ust-menu {
+  height: 70px;
+  padding: 0 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #183229;
+  color: white;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+nav a {
+  margin-left: 24px;
+  color: white;
+  text-decoration: none;
+}nav a:hover {
+  color: #c8dc9a;
+}
+
+/* Büyük manzara fotoğraflı bölüm */
+.ana-bolum {
+  min-height: 520px;
+  padding: 80px 10%;
+  display: flex;
+  align-items: center;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.55)), url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=2000&q=85");
+  background-size: cover;
+  background-position: center;
+}
+
+.yazi-alani {
+  max-width: 600px;
+}
+
+.kucuk-baslik {
+  font-size: 14px;
+  letter-spacing: 3px;}
+
+h1 {
+  margin: 15px 0;
+  font-family: Georgia, serif;
+  font-size: 52px;
+}
+
+.aciklama {
+  max-width: 480px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.buton {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 14px 22px;
+  border-radius: 4px;
+  background-color: #c8dc9a;
+  color: #26352d;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.buton:hover {
+  background-color: white;
+}.kesfet {
+  padding: 65px 8%;
+  text-align: center;
+  background-color: #f4f3ed;
+}
+
+.kesfet h2 {
+  margin-bottom: 30px;
+  font-family: Georgia, serif;
+  font-size: 32px;
+}
+
+.kartlar {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.kart {
+  width: 30%;
+  padding: 25px;
+  border-radius: 6px;
+  background-color: white;
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.kart span {
+  color: #78915f;
+  font-weight: bold;}
+
+.kart p {
+  color: #657068;
+  line-height: 1.5;
+}
+
+footer {
+  padding: 20px;
+  background-color: #183229;
+  color: white;
+  text-align: center;
+}
+
+/* Telefon ekranları için */
+@media (max-width: 650px) {
+  .ust-menu {
+    height: auto;
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav a {
+    margin: 0 7px;
+    font-size: 14px;
+  }.ana-bolum {
+    min-height: 480px;
+    padding: 50px 25px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  .kartlar {
+    flex-direction: column;
+  }
+
+  .kart {
+    width: auto;
+  }
+}
